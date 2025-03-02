@@ -1235,7 +1235,8 @@ ol {
 }
 
 .portfolio__item__video {
-  height: 240px;
+height: 204px;
+width: 363px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
