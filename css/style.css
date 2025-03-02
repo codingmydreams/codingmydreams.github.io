@@ -514,11 +514,12 @@ ol {
 -----------------------*/
 .work {
   overflow: hidden;
-  background: #132172;
+  background: #FFFFFF;
 }
 
 .work__gallery {
   margin-right: -10px;
+  background-image: radial-gradient(#ffffff, #131268);
 }
 
 .work__item {
@@ -610,6 +611,7 @@ ol {
   background: #111D44;
   height: 840px;
   padding-top: 380px;
+  background-image: radial-gradient(#282753, #0e1840);
   overflow: hidden;
 }
 
@@ -1020,7 +1022,8 @@ ol {
   About
 -----------------------*/
 .about {
-  background: #111D44;
+  background: #F0F0F0;
+  background-image: url("img1.jpg");
   padding-bottom: 150px;
 }
 
@@ -1121,9 +1124,12 @@ ol {
   Services
 -----------------------*/
 .services {
-  background: #111D44;
+  background: #ffffff;
+  background-image: url("img3.jpg");
   padding-bottom: 60px;
   padding-top: 110px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .services__title p {
@@ -1173,7 +1179,8 @@ ol {
   Services Page
 -----------------------*/
 .services-page {
-  background: #111D44;
+  background: #F0F0F0;
+  background-image: url("img4.jpg");
   padding-bottom: 50px;
 }
 
@@ -1194,7 +1201,10 @@ ol {
   Portfolio
 -----------------------*/
 .portfolio {
-  background: #111D44;
+  background: #F0F0F0;
+  background-image: url("img0.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .portfolio__filter {
@@ -1778,6 +1788,7 @@ ol {
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1170px;
+
   }
 }
 /* Medium Device = 1200px */
@@ -1858,6 +1869,7 @@ ol {
     height: auto;
     padding-top: 100px;
     padding-bottom: 70px;
+
   }
 
   .team__item.team__item--second {
