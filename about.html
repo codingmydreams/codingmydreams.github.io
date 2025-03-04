@@ -12,6 +12,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css" type="text/css">
 	<link rel="stylesheet" href="css/elegant-icons.css" type="text/css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css" type="text/css">
@@ -44,6 +45,18 @@
 							</ul>
 						</nav>
 						<div class="header__nav__social">
+							<a href="#" onclick="copyToClipboard(event)"><i class="fab fa-discord"></i></a>
+							<script>
+							function copyToClipboard(event) {
+								event.preventDefault();
+								const discordUser = "@komarururu";
+								navigator.clipboard.writeText(discordUser).then(() => {
+									alert("Usuario: " + discordUser + " ha sido copiado al portapapeles ✅");
+								}).catch(err => {
+									console.error("Error al copiar usuario:"+ discordUser, err);
+								});
+							}
+							</script>
 							<a href="https://wa.me/526647320545"><i class="fa fa-whatsapp"></i></a>
 							<a href="mailto:wickedkomaruu@gmail.com"><i class="icon_mail"></i></a>
 						</div>

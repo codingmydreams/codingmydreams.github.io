@@ -5,6 +5,8 @@
 	<meta charset="UTF-8">
 	<meta name="description" content="Servicio de edicion">
 	<meta name="keywords" content="Servicio de edicion">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<title>Perfíl de Trabajo</title>
@@ -44,6 +46,20 @@
 							</ul>
 						</nav>
 						<div class="header__nav__social">
+							<a href="#" onclick="copyToClipboard(event)">
+								<i class="fab fa-discord"></i>
+							</a>
+							<script>
+							function copyToClipboard(event) {
+								event.preventDefault();
+								const discordUser = "@komarururu";
+								navigator.clipboard.writeText(discordUser).then(() => {
+									alert("Usuario: " + discordUser + " ha sido copiado al portapapeles ✅");
+								}).catch(err => {
+									console.error("Error al copiar usuario:"+ discordUser, err);
+								});
+							}
+							</script>
 							<a href="https://wa.me/526647320545"><i class="fa fa-whatsapp"></i></a>
 							<a href="mailto:wickedkomaruu@gmail.com"><i class="icon_mail"></i></a>
 						</div>
@@ -150,7 +166,9 @@
 
 				<div class="col-lg-4 col-md-6 col-sm-6 mix web">
 					<div class="portfolio__item">
-						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/mini7.jpeg">
+						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/s3.png">
+							<a href="https://youtu.be/39C-xCBg10Y?si=7GPY0_Bus3G76RRv" class="play-btn video-popup"><i
+								class="fa fa-play"></i></a>
 						</div>
 						<div class="portfolio__item__text">
 							<ul>
@@ -163,7 +181,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-6 mix photography">
 					<div class="portfolio__item">
 						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/s2.png">
-							<a href="https://streamable.com/dsot2t?src=player-page-share" class="play-btn video-popup"><i
+							<a href="https://youtu.be/JNTCuJqGKwg?si=GvjqnfR9h5Abluv2" class="play-btn video-popup"><i
 									class="fa fa-play"></i></a>
 						</div>
 						<div class="portfolio__item__text">
@@ -175,7 +193,7 @@
 				<div class="col-lg-4 col-md-6 col-sm-6 mix ecommerce">
 					<div class="portfolio__item">
 						<div class="portfolio__item__video set-bg" data-setbg="img/portfolio/s1.png">
-							<a href="https://streamable.com/un913m?src=player-page-share" class="play-btn video-popup"><i
+							<a href="https://youtu.be/fQogO5yWGzk?si=KNi199D2zGSboUYT" class="play-btn video-popup"><i
 									class="fa fa-play"></i></a>
 						</div>
 						<div class="portfolio__item__text">
